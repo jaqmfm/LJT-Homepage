@@ -7,6 +7,8 @@ description: "Academic homepage of Junteng Liu, a Ph.D. candidate working on nat
 url: "https://jaqmfm.github.io"
 baseurl: "/LJT-Homepage"
 repository: "jaqmfm/LJT-Homepage"
+minimal_mistakes_skin: "default"
+search: true
 teaser: false
 breadcrumbs: false
 words_per_minute: 160
@@ -78,6 +80,12 @@ exclude:
   - tmp
   - /docs
   - /test
+  # The fork includes demonstration records; these are omitted from the personal site.
+  - _posts
+  - _publications
+  - _portfolio
+  - _talks
+  - _teaching
 keep_files:
   - .git
   - .svn
@@ -167,6 +175,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-include-cache
 
 # Archives
 category_archive:
